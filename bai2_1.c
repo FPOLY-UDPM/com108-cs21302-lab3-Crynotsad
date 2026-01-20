@@ -16,15 +16,27 @@
 //  Ngược lại: Phương trình có nghiệm x = -b/a 
  
 #include <stdio.h>
-
+#include <math.h>
 int main(){
     
     // Khai báo biến
-
+    float a,b;
 
     // Nhập dữ liệu
-
+    printf("Nhập a:");
+    scanf("%f",&a);
+    printf("Nhập b");
+    scanf("%f",&b);
 
     // Xử lý, tính toán VÀ Hiển thị kết quả
-
+    if(a==0){
+        if(b==0) {
+            printf("Phương trình có vô số nghiệm\n");
+        }else {
+            printf("Phương trình vô nghiệm\n");}
+    }else {
+        float x = -b/a;
+        printf("Nghiệm của phương trình là:x=%f",x);
+    }
+    return 0;
 }
